@@ -1,0 +1,38 @@
+@use 'variables' as v;
+@use 'main';
+
+.login__container {
+  gap: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 20px;
+  margin: 100px auto;
+  height: 400px;
+  width: 60%;
+  background-color: v.$colorWithe;
+
+  #login {
+    height: 150px;
+    display: block;
+    flex-direction: column;
+    h2 {
+      margin-bottom: 40px;
+    }
+    #btn__login {
+      cursor: pointer;
+      background-color: green;
+      color: #fff;
+      padding: 10px;
+      border: none;
+      border-radius: 20px;
+    }
+  }
+
+  #conversations {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
